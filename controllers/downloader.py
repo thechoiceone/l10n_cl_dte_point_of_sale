@@ -1,5 +1,8 @@
 from odoo import http
 from odoo.addons.web.controllers.main import serialize_exception
+import logging
+
+_logger = logging.getLogger(__name__)
 try:
     from odoo.addons.l10n_cl_fe.controllers.downloader import document
 except:
