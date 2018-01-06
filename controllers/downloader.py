@@ -1,6 +1,9 @@
 from odoo import http
 from odoo.addons.web.controllers.main import serialize_exception
-from odoo.addons.l10n_cl_fe.controllers.downloader import document
+try:
+    from odoo.addons.l10n_cl_fe.controllers.downloader import document
+except:
+    _logger.warning('No se puede cargar l10n_cl_fe')
 
 class Binary(http.Controller):
 
