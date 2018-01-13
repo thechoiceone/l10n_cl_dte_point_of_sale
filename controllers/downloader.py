@@ -4,7 +4,7 @@ import logging
 
 _logger = logging.getLogger(__name__)
 try:
-    from odoo.addons.l10n_cl_fe.controllers.downloader import document
+    from odoo.addons.l10n_cl_fe.controllers.downloader import *
 except:
     _logger.warning('No se puede cargar l10n_cl_fe')
 
